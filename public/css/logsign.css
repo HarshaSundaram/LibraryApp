@@ -1,0 +1,22 @@
+
+.form-container{
+    border: 0px solid #ffff;padding: 60px 60px; margin-top:10vh;
+    -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    }
+  .form-group.success input{
+        border: 2px solid rgb(26, 167, 26);
+    }
+  
+  .form-group.error input{
+        border: 2px solid red;
+    }
+  
+  
+  .form-group small{
+        position: relative;
+        margin: 2px;
+       visibility: hidden;
+    }
+  
