@@ -21,7 +21,7 @@ const nav=[
         link:'/signup', name:'Signup'
     }
 ];
-
+const PORT = process.env.PORT || 5003;
 const booksRouter=require('./src/routes/bookRoutes')(nav)
 const authorsRouter=require('./src/routes/authorRoutes')(nav)
 const loginRouter=require('./src/routes/loginRoutes')(nav)
@@ -48,4 +48,6 @@ app.get('/',function(req,res){
     });
 });
 
-app.listen(5003);
+app.listen(PORT,()=>{
+    console.log("Server Ready on 5003"); 
+});
